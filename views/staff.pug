@@ -2,7 +2,7 @@ extends layout.pug
 
 block content
     .container 
-        h1 All teachers
+        h1 All staff members
 
         if edited 
             p.edited Changes saved successfully! 
@@ -11,7 +11,8 @@ block content
         if error
             p.error None of the fields should be empty! 
 
-        each teacher in teachers 
+        each teacher in teachers
             div.teacher-wrapper
-                a.teacher(href=`/teachers/${ teacher.id }`)= teacher.firstname + " " + teacher.secondname
+                a.teacher(href=`/staff/${ teacher.id }`)= teacher.firstname + " " + teacher.secondname
                 a.delete(href=`/${teacher.id}/delete`) Delete
+

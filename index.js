@@ -20,8 +20,8 @@ app.get('/add', (req, res) => {
 	res.render('create')
 })
 
-app.get('/api/v1/teachers', (req, res) => {
-	fs.readFile('./data/teachers.json', (err, data) => {
+app.get('/api/v1/staff', (req, res) => {
+	fs.readFile('./data/staff.json', (err, data) => {
 		if (err) throw err
 
 		const teachers = JSON.parse(data)
@@ -40,7 +40,7 @@ app.post('/add', (req, res) => {
 	if (firstname.trim() === '' || secondname.trim() === '' || age.trim() === '' ||  emailaddress.trim() === '' ){
 		res.render('create', {error: true})
 	} else {
-		fs.readFile('./data/teachers.json', (err, data) => {
+		fs.readFile('./data/staff.json', (err, data) => {
 			if (err) throw err
 
 			const teachers = JSON.parse(data)
@@ -54,7 +54,7 @@ app.post('/add', (req, res) => {
 				major: major
 			})
 
-			fs.writeFile('./data/teachers.json', JSON.stringify(teachers), err => {
+			fs.writeFile('./data/staff.json', JSON.stringify(teachers), err => {
 				if (err) throw err
 
 				res.render('create', {success: true})
@@ -65,20 +65,20 @@ app.post('/add', (req, res) => {
 
 //const teachers = ['Some good teacher', 'Some good teacher 2']
 
-app.get('/teachers', (req, res) => {
-	fs.readFile('./data/teachers.json', (err, data) => {
+app.get('/staff', (req, res) => {
+	fs.readFile('./data/staff.json', (err, data) => {
 		if (err) throw err
 
 	const teachers = JSON.parse(data)
 
-	res.render('teachers', {teachers: teachers})
+	res.render('staff', {teachers: teachers})
 	})
 })
 
-app.get('/teachers/:id', (req, res) => {
+app.get('/staff/:id', (req, res) => {
 	const id = req.params.id
 
-	fs.readFile('./data/teachers.json', (err, data) => {
+	fs.readFile('./data/staff.json', (err, data) => {
 		if (err) throw err
 
 	const teachers = JSON.parse(data)
@@ -91,13 +91,13 @@ app.get('/teachers/:id', (req, res) => {
 
 app.get('/:id/delete', (req, res) => {
 	const id = req.params.id
-	fs.readFile('./data/teachers.json', (err, data) => {
+	fs.readFile('./data/staff.json', (err, data) => {
 	  if (err) throw err
 	  const teachers = JSON.parse(data)
 	  const filtered = teachers.filter(teacher => teacher.id != id)
-	  fs.writeFile('./data/teachers.json', JSON.stringify(filtered), err => {
+	  fs.writeFile('./data/staff.json', JSON.stringify(filtered), err => {
 		if (err) throw err
-		res.render('teachers', {teachers: filtered, deleted: true})
+		res.render('staff', {teachers: filtered, deleted: true})
 	  })
 	})
   })
@@ -111,14 +111,14 @@ app.post('/:id/edit', (req, res) => {
 		const major = req.body.major
 
 		if (firstname.trim() === '' || secondname.trim() === '' || age.trim() === '' ||  emailaddress.trim() === '') {
-			fs.readFile('./data/teachers.json', (err, data) => {
+			fs.readFile('./data/staff.json', (err, data) => {
 			if (err) throw err
 			const teachers = JSON.parse(data)
 			const teacher = teachers.filter(teacher => teacher.id === id)[0]
 			res.render('detail', {teacher: teacher, error: true})
 			})
 		} else {
-		fs.readFile('./data/teachers.json', (err, data) => {
+		fs.readFile('./data/staff.json', (err, data) => {
 			if (err) throw err
 			const teachers = JSON.parse(data)
 			const teacher = teachers.filter(teacher => teacher.id === id)[0]
@@ -133,10 +133,10 @@ app.post('/:id/edit', (req, res) => {
 		
 
 			teachers.push(splicedTeacher)
-			fs.writeFile('./data/teachers.json', JSON.stringify(teachers), err => {
+			fs.writeFile('./data/staff.json', JSON.stringify(teachers), err => {
 			if (err) throw err
 
-			res.render('teachers', {teachers: teachers, edited: true})
+			res.render('staff', {teachers: teachers, edited: true})
 			})
 		})
 	}

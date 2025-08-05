@@ -2,13 +2,13 @@ extends layout.pug
 
 block content 
     .container 
-        h2 Add a new teacher
+        h2 Add a new staff
 
         if error
             p.error None of the fields should be empty! 
 
         if success
-            p.success Teacher added successfully! 
+            p.success Staff member added successfully!
 
         form.form(action="/add" method='POST')
 
@@ -36,4 +36,4 @@ block content
                     option(value="bis") Bussiness Information System 
             br
 
-            button.btn Add a teacher
+            button.btn Add a staff
