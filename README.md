@@ -241,7 +241,8 @@ nodemon index.js
 ## 🚀 Live Demo
 
 ### **🌐 Hosted Application**
-**Live Website:** [Teachers Database System](https://wonderful-emerald-pepper.glitch.me)
+**Live Website:** [Teachers Database System](https://teachers-database-project.onrender.com/)
+- ***Note*** - May take some time to load the website
 
 ### **🔧 Deployment Platform**
 - **Glitch Hosting** - Professional cloud hosting
