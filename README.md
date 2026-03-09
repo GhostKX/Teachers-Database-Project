@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="public/icons/graduation.png" width="45"> Teachers Database Management System <img src="public/icons/to-do-list.png" width="45">
+# <img src="public/icons/graduation.png" width="48"> Teachers Database Management System <img src="public/icons/to-do-list.png" width="45">
 
 [![Website](https://img.shields.io/badge/Website-Live-FF6B6B?logo=google-chrome&logoColor=white)](https://wonderful-emerald-pepper.glitch.me)
 [![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
