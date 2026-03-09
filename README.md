@@ -10,6 +10,8 @@
 [![JSON](https://img.shields.io/badge/Data-JSON-000000?logo=json&logoColor=white)](https://www.json.org/)
 [![Nodemon](https://img.shields.io/badge/Nodemon-Dev%20Server-76D04B?logo=nodemon&logoColor=white)](https://nodemon.io/)
 [![Glitch](https://img.shields.io/badge/Hosting-Glitch-3333FF?logo=glitch&logoColor=white)](https://glitch.com/)
+[![npm](https://img.shields.io/badge/npm-Package%20Manager-CB3837?logo=npm&logoColor=white)](https://www.npmjs.com/)
+[![Package.json](https://img.shields.io/badge/config-package.json-8DD6F9?logo=node.js&logoColor=black)](package.json)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
 **🌟 A comprehensive web-based teachers database management system built with Node.js, Express.js, and Pug templating! 🌟**
