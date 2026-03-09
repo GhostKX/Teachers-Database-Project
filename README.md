@@ -1,13 +1,16 @@
-# 🎓 Teachers Database Management System
-
 <div align="center">
 
-[![Website](https://img.shields.io/badge/Website-Live-FF6B6B?style=for-the-badge&logo=google-chrome&logoColor=white)](https://wonderful-emerald-pepper.glitch.me)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-[![Pug](https://img.shields.io/badge/Pug-A86454?style=for-the-badge&logo=pug&logoColor=white)](https://pugjs.org/)
-[![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)](https://www.json.org/)
-[![Glitch](https://img.shields.io/badge/Glitch-3333FF?style=for-the-badge&logo=glitch&logoColor=white)](https://glitch.com/)
+# <img src="public/icons/project.png" width="35"> <img src="public/icons/graduation.png" width="35"> Teachers Database Management System <img src="public/icons/to-do-list.png" width="35">
+
+[![Website](https://img.shields.io/badge/Website-Live-FF6B6B?logo=google-chrome&logoColor=white)](https://wonderful-emerald-pepper.glitch.me)
+[![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-Web%20Framework-404D59?logo=express&logoColor=white)](https://expressjs.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Backend-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Pug](https://img.shields.io/badge/Pug-Template%20Engine-A86454?logo=pug&logoColor=white)](https://pugjs.org/)
+[![JSON](https://img.shields.io/badge/Data-JSON-000000?logo=json&logoColor=white)](https://www.json.org/)
+[![Nodemon](https://img.shields.io/badge/Nodemon-Dev%20Server-76D04B?logo=nodemon&logoColor=white)](https://nodemon.io/)
+[![Glitch](https://img.shields.io/badge/Hosting-Glitch-3333FF?logo=glitch&logoColor=white)](https://glitch.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
 **🌟 A comprehensive web-based teachers database management system built with Node.js, Express.js, and Pug templating! 🌟**
 
